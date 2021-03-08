@@ -56,3 +56,35 @@ console.log(g);
 if (a !== (b || f) === !f && e !== c){
     console.log(true);
 }
+
+//SECTION 3
+
+// while (true) {
+// 	console.log('Do not run this loop');
+// }
+//1. Yes, it is an infinite loop because a while loop will run as long as it returns true, and if the parameter given is true,
+//it will never stop running.
+
+// const runProgram = true;
+
+// while (runProgram) {
+// 	console.log('Do not run this loop');
+// 	runProgram = false;
+// }
+//2. No, it will return an error because const runProgram is declared outside the statement and is a local variable
+//3. Our value of q is set to 20. We create a while loop that will run as long as q is greater than 10. The value of q will be
+//printed to console. Each time the loop runs, decrease the value of q by 1. The loop will stop when the value of q is no
+//longer greater than 10.
+
+// set variable 'letters' to "A"
+let letters = "A";
+// set variable 'i' to 0
+let i = 0;
+// create a while loop that will run as long as 'i' is less than 20, adding an "A" to the string each time the loops runs,
+// increasing i by 1 each time the code runs
+while (i < 20) {
+	letters += "A";
+	i++;
+}
+// console will pring out "A" 21 times, because we set the loop to start at 0
+console.log(letters);
