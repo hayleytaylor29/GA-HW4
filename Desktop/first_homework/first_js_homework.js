@@ -88,3 +88,45 @@ while (i < 20) {
 }
 // console will pring out "A" 21 times, because we set the loop to start at 0
 console.log(letters);
+
+
+// SECTION 4
+// 1. A for loop should be used when you know how many times the loop should run, a while loop can be used when you don't know
+//  how long it will go for.
+// 2. The first component is: i = 0
+//    The second component is: i < 100
+//    The third componenet is: i++
+//          for (let i = 0; i < 100; i++) {
+//	           console.log('Without you, today\'s emotions are the scurf of yesterday\'s');
+//                } 
+
+// 3.  for (let i = 0; i < 1000; i++) {
+//         console.log(i);
+//           }
+// BONUS: The "\" tells the computer that the "'" is being used a character and not a quotation mark, because we can use both
+//         ' and " as effective quotations.
+
+// for (let i = 999; i >= 0; i--) {
+//     console.log(i);
+// }
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log("The value of i is: " +i+ " of 10");
+// }
+
+// // BONUS
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`The value of i is: ` +i+ ` of 10`);
+// }
+
+const StarWars = ["Han", "C3PO", "R2D2", "Luke", "Leia", "Anakin"];
+for (let i = 0; i < StarWars.length; i++) {
+    console.log(StarWars[i], i);
+}
+
+// BONUS
+// const StarWars = ["Han", "C3PO", "R2D2", "Luke", "Leia", "Anakin"];
+// for (let i = 0; i < StarWars.length; i++)
+// if (i % 2 == 0) {
+//     console.log(StarWars[i], i);
+// }
