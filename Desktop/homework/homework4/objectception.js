@@ -60,11 +60,10 @@ console.log(oddBonds);
 //Determine the cumulative gross of the Bond franchise and console log the result.
 //I know that we need to remove the $ sign and turn the string into a number, then sum up the value
 //I tried doing some research to figure this one out but am not able to figure it out.
-// let bondGross = 0;
-// for ( let i = 0; i < bondFilms.length; i++){
-//     bondGross = parseFloat(bondFilms[i].replace($));
-// }
-// console.log(bondGross);
-
+let grossTotal = 0;
+for(let i = 0; i < bondFilms.length; i++){
+    grossTotal = grossTotal+ parseInt(bondFilms[i].gross.replace(/[^0-9\.+/$,'']));
+}
+console.log(grossTota);
 //not sure if we were supposed to write something out or create a dom tree for the last part, I don't
 //remember creating a dom tree for our GA class as described in the HW. 
